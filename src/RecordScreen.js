@@ -100,7 +100,7 @@ Patients
       </View>
 
       <DataTable>
-        <DataTable.Header>
+        <DataTable.Header >
           <DataTable.Title>First Name</DataTable.Title>
           <DataTable.Title>Last Name</DataTable.Title>
           <DataTable.Title>Date</DataTable.Title>
@@ -131,19 +131,19 @@ Patients
         <View style={styles.editContainer}>
           <TextInput
             style={styles.input}
-            placeholder="Edit First Name"
+            placeholder="FName"
             value={editRecord.firstName}
             onChangeText={(text) => setEditRecord({ ...editRecord, firstName: text })}
           />
           <TextInput
             style={styles.input}
-            placeholder="Edit Last Name"
+            placeholder="LName"
             value={editRecord.lastName}
             onChangeText={(text) => setEditRecord({ ...editRecord, lastName: text })}
           />
           <TextInput
             style={styles.input}
-            placeholder="Edit Date"
+            placeholder="Date"
             value={editRecord.date}
             onChangeText={(text) => setEditRecord({ ...editRecord, date: text })}
           />
@@ -166,16 +166,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    paddingTop:100,
+    paddingTop:80,
   },
   welcm:{
-    marginTop:100,
+    marginBottom:30,
   fontSize:30,
+  color:"#3c998b"
+
   },
   pat:{
     marginBottom:20,
     fontSize:20,
-    textAlign:"center"
+    textAlign:"center",
+    color:"white"
     },
 
     pink:{
@@ -191,14 +194,16 @@ const styles = StyleSheet.create({
         },
 
   inputContainer: {
+    color:"white",
     flexDirection: 'row',
     marginBottom: 16,
+ 
   },
   input: {
     flex: 1,
     marginRight: 8,
     borderWidth: 1,
-    borderColor: 'gray',
+    borderColor: 'white',
     borderRadius: 4,
     padding: 8,
   },

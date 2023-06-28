@@ -92,12 +92,11 @@ Clinical Records
       </View>
 
       <DataTable>
-        <DataTable.Header>
-          <DataTable.Title>Clinic Date </DataTable.Title>
+        <DataTable.Header  >
+          <DataTable.Title >Clinic Date </DataTable.Title>
           <DataTable.Title>Nature Of Sickness</DataTable.Title>
           <DataTable.Title>Medicine</DataTable.Title>
-          <DataTable.Title>delete</DataTable.Title>
-          <DataTable.Title>edit</DataTable.Title>
+       
         </DataTable.Header>
 
         {records.map((record) => (
@@ -158,24 +157,18 @@ const styles = StyleSheet.create({
     padding: 16,
     paddingTop:100,
   },
-  welcm:{
-    marginTop:100,
-  fontSize:30,
-  },
+  
   pat:{
     marginBottom:20,
     fontSize:20,
-    textAlign:"center"
+    textAlign:"center",
+    color:"white"
     },
 
-    pink:{
-        marginTop:80,
-        backgroundColor:"pink",
-        width:100,
-        height:100,
-       right:40,
-        position:"absolute"
-      
+    title:{
+       
+        
+      color:"white"
 
       
         },
@@ -188,7 +181,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginRight: 8,
     borderWidth: 1,
-    borderColor: 'gray',
+    borderColor: 'white',
     borderRadius: 4,
     padding: 8,
   },
